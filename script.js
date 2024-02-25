@@ -7,7 +7,7 @@ const ringTone = new Audio('folder/ringtone.mp3');
 const secondBtn = document.querySelector('#secondBtn');
 const body = document.querySelector('body');
 const resumeBtn = document.querySelector('#resumeBtn');
-const welcomeBackScreen = document.querySelector('#welcomeBack');
+const FirstScreen = document.querySelector('#FirstScreen');
 const alarmTimeIndicator = document.querySelector('#alarmText');
 let CurrentTime = document.querySelector('#currentTime');
 // Check if user has exited webpage
@@ -171,7 +171,7 @@ const setAlarm = () => {
 // Hide first Screen
 const hidefirstScreen = () => {
     // hide FirstScreen
-    welcomeBackScreen.className = 'd-none';
+    welcomeFirstScreen.className = 'd-none';
     // Set alarm time indicator
     alarmTimeIndicator.textContent = "Alarm Time set to: " + localStorage.getItem('alarmTime');
     // Set userExited to xxx to avoid DomException
